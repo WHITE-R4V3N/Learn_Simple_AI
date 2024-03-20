@@ -65,7 +65,7 @@ output_size = 1
 model = NeuralNetwork(input_size, hidden_size, output_size)
 
 # Sample training data (XOR example)
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+X = np.array([[0, 0], [1, 0], [0, 1], [1, 1]])
 y = np.array([[0], [1], [1], [0]])
 
 # Training the network
@@ -76,5 +76,5 @@ for epoch in range(epochs):
     model.backwards_prop(X, y, learning_rate)
 
 # Test the network
-predictions = model.predict(np.array([[0, 1], [1, 1], [1, 0], [0, 0]]))
+predictions = model.predict(np.array([[0, 1], [1, 0], [0, 0]]))
 print(f'Predicted XOR values: {predictions.round()}')
