@@ -20,3 +20,6 @@ We expect the output to be [0, 0, 1] which will translate the sentence.
 
 # Goal
 The goal is to get this to function to a degree that all that would be needed is a LLM or a tokenizer to expand on this idea.
+
+# Whats Next?
+From here you can expand and work towards creating the AI you want. You might add a tokenizer or library to process text. Scale it up to run more taskstasks. Modify the code so after a certain probability it will run the task (ie greater probability than 0.5 or 0.3). The options are limitless. This is just a simple view of AI models.
